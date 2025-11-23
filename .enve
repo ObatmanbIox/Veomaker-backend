@@ -1,0 +1,19 @@
+PORT=3000
+BACKEND_PUBLIC_TOKEN=veomaker-public-token-12345
+
+# If you have GEMINI API key (recommended), set it:
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY_HERE
+
+# Storage provider: 'local' or 's3'
+STORAGE_PROVIDER=local
+LOCAL_STORAGE_DIR=./storage
+APP_BASE_URL=http://localhost:3000
+
+# For S3 (if STORAGE_PROVIDER=s3)
+S3_BUCKET=your-bucket-name
+AWS_ACCESS_KEY_ID=xxx
+AWS_SECRET_ACCESS_KEY=yyy
+AWS_REGION=us-east-1
+
+# Optional: callback url to notify frontend
+CALLBACK_URL=https://meu-frontend.com/api/veo-callback
