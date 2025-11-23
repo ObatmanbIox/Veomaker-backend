@@ -291,6 +291,5 @@ app.get('/api/health', (req, res) => res.json({ ok: true, now: Date.now(), env: 
 app.get('/', (req, res) => res.send('VeoMaker backend online'));
 
 // Inicia o servidor
-app.listen(PORT, () => {
-  console.log(`VeoMaker backend listening on port ${PORT}`);
-});
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => console.log(`VeoMaker backend listening on port ${PORT}`));
